@@ -1,4 +1,4 @@
-[0m[[0m[0minfo[0m] [0m[0mUpdating ProjectRef(uri("file:/home/bigdata/Documentos/bigdataapp/project/"), "bigdataapp-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating ProjectRef(uri("file:/home/bigdata/Documentos/bigdataapp/bigdataapp/project/"), "bigdataapp-build")...[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: resolving dependencies :: default#bigdataapp-build;0.1.0-SNAPSHOT[0m
 [0m[[0m[0mdebug[0m] [0m[0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool][0m
 [0m[[0m[0mdebug[0m] [0m[0m	validate = true[0m
@@ -13576,117 +13576,139 @@
 [0m[[0m[0mdebug[0m] [0m[0mignoring unhandled DependencyDescriptorMediator: class sbt.internal.librarymanagement.IvyScalaUtil$OverrideScalaMediator[0m
 [0m[[0m[0mdebug[0m] [0m[0m	resolved ivy file produced in cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-tracking_2.12;1.1.2!util-tracking_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt.ipcsocket#ipcsocket;1.0.0!ipcsocket.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-compile-core_2.12;1.1.1!zinc-compile-core_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (56ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.4!jline.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-relation_2.12;1.1.2!util-relation_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#gigahorse-okhttp_2.12;0.3.0!gigahorse-okhttp_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#fastparse-utils_2.12;0.4.2!fastparse-utils_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#launcher-interface;1.0.2!launcher-interface.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-cache_2.12;1.1.2!util-cache_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#main-settings_2.12;1.1.1!main-settings_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#io_2.12;1.1.4!io_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#sjson-new-murmurhash_2.12;0.8.2!sjson-new-murmurhash_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#launcher-interface;1.0.2!launcher-interface.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.trueaccord.scalapb#scalapb-runtime_2.12;0.6.0!scalapb-runtime_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.4!jline.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#fastparse-utils_2.12;0.4.2!fastparse-utils_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe#ssl-config-core_2.12;0.2.2!ssl-config-core_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#gigahorse-okhttp_2.12;0.3.0!gigahorse-okhttp_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#sjson-new-murmurhash_2.12;0.8.2!sjson-new-murmurhash_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-tracking_2.12;1.1.2!util-tracking_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-relation_2.12;1.1.2!util-relation_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.4!scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.4!scala-reflect.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.spire-math#jawn-parser_2.12;0.10.4!jawn-parser_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#main-settings_2.12;1.1.1!main-settings_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.trueaccord.scalapb#scalapb-runtime_2.12;0.6.0!scalapb-runtime_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt.ipcsocket#ipcsocket;1.0.0!ipcsocket.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1853ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/bigdata/.ivy2[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (166ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1890ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1890ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -13695,11 +13717,30 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (154ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1897ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1896ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1901ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -13710,7 +13751,9 @@
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (157ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1209ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -13719,70 +13762,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (91ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (162ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (103ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (198ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (223ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (219ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (218ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1871ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -13792,9 +13772,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (224ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (2042ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -13803,17 +13781,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (236ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (183ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1880ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -13823,8 +13791,7 @@
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.logging.log4j#log4j-api;2.8.1!log4j-api.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (252ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1915ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -13833,68 +13800,46 @@
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1920ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
 [0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
 [0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#sourcecode_2.12;0.1.3!sourcecode_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#core-macros_2.12;1.1.1!core-macros_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#protocol_2.12;1.1.1!protocol_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.logging.log4j#log4j-core;2.8.1!log4j-core.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okhttp3#okhttp-urlconnection;3.7.0!okhttp-urlconnection.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#gigahorse-core_2.12;0.3.0!gigahorse-core_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-classpath_2.12;1.1.1!zinc-classpath_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-apiinfo_2.12;1.1.1!zinc-apiinfo_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-ivy-integration_2.12;1.1.1!zinc-ivy-integration_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc_2.12;1.1.1!zinc_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#test-agent;1.1.1!test-agent.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.logging.log4j#log4j-slf4j-impl;2.8.1!log4j-slf4j-impl.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.github.cb372#scalacache-caffeine_2.12;0.20.0!scalacache-caffeine_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-control_2.12;1.1.2!util-control_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.github.cb372#scalacache-core_2.12;0.20.0!scalacache-core_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.github.ben-manes.caffeine#caffeine;2.5.6!caffeine.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.java.dev.jna#jna;4.5.0!jna.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#sjson-new-scalajson_2.12;0.8.2!sjson-new-scalajson_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-classfile_2.12;1.1.1!zinc-classfile_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt.ivy#ivy;2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310!ivy.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.jcraft#jsch;0.1.46!jsch.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.5!scala-parser-combinators_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.java.dev.jna#jna-platform;4.5.0!jna-platform.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-core_2.12;1.1.1!zinc-core_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-persist_2.12;1.1.1!zinc-persist_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#run_2.12;1.1.1!run_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-interface;1.1.2!util-interface.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.0!reactive-streams.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#command_2.12;1.1.1!command_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#collections_2.12;1.1.1!collections_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lmax#disruptor;3.3.6!disruptor.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-logging_2.12;1.1.2!util-logging_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#librarymanagement-core_2.12;1.1.3!librarymanagement-core_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#librarymanagement-ivy_2.12;1.1.3!librarymanagement-ivy_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;1.1.1!compiler-interface.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-position_2.12;1.1.2!util-position_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-compile_2.12;1.1.1!zinc-compile_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe#config;1.2.0!config.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okio#okio;1.12.0!okio.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#sjson-new-core_2.12;0.8.2!sjson-new-core_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okhttp3#okhttp;3.7.0!okhttp.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#shaded-scalajson_2.12;1.0.0-M4!shaded-scalajson_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#completion_2.12;1.1.1!completion_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#task-system_2.12;1.1.1!task-system_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#tasks_2.12;1.1.1!tasks_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#testing_2.12;1.1.1!testing_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#sbt;1.1.1!sbt.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (280ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (2052ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1889ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (1929ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
+[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
+[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
+[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
+[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
+[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
+[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/bigdata/.sbt/boot/scala-2.12.4/org.scala-sbt/sbt/1.1.1/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0msettings loaded (62ms)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/bigdata/.ivy2/cache[0m
 [0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
@@ -13904,23 +13849,78 @@
 [0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
 [0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#sbinary_2.12;0.4.4!sbinary_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-control_2.12;1.1.2!util-control_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.0!reactive-streams.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okhttp3#okhttp-urlconnection;3.7.0!okhttp-urlconnection.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#sourcecode_2.12;0.1.3!sourcecode_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#gigahorse-core_2.12;0.3.0!gigahorse-core_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.trueaccord.lenses#lenses_2.12;0.4.12!lenses_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#sbt;1.1.1!sbt.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okhttp3#okhttp;3.7.0!okhttp.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lihaoyi#fastparse_2.12;0.4.2!fastparse_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;3.3.1!protobuf-java.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#core-macros_2.12;1.1.1!core-macros_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.logging.log4j#log4j-api;2.8.1!log4j-api.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#run_2.12;1.1.1!run_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#sjson-new-scalajson_2.12;0.8.2!sjson-new-scalajson_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-logging_2.12;1.1.2!util-logging_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-classpath_2.12;1.1.1!zinc-classpath_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#completion_2.12;1.1.1!completion_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#main_2.12;1.1.1!main_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#protocol_2.12;1.1.1!protocol_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;3.3.1!protobuf-java.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#test-agent;1.1.1!test-agent.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#command_2.12;1.1.1!command_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#logic_2.12;1.1.1!logic_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.github.cb372#scalacache-core_2.12;0.20.0!scalacache-core_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.java.dev.jna#jna;4.5.0!jna.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#librarymanagement-core_2.12;1.1.3!librarymanagement-core_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.logging.log4j#log4j-core;2.8.1!log4j-core.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#task-system_2.12;1.1.1!task-system_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#actions_2.12;1.1.1!actions_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 2723ms :: artifacts dl 598ms[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT compile produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-compile.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT runtime produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-runtime.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT test produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-test.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT provided produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-provided.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT optional produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-optional.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT compile-internal produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-compile-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT runtime-internal produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-runtime-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT test-internal produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-test-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT plugin produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-plugin.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT pom produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-pom.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT scala-tool produced in /home/bigdata/Documentos/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-scala-tool.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (2723ms resolve - 598ms download)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#tasks_2.12;1.1.1!tasks_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#testing_2.12;1.1.1!testing_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.4!scala-compiler.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.5!scala-parser-combinators_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-apiinfo_2.12;1.1.1!zinc-apiinfo_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-classfile_2.12;1.1.1!zinc-classfile_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.typesafe#config;1.2.0!config.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-cache_2.12;1.1.2!util-cache_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.apache.logging.log4j#log4j-slf4j-impl;2.8.1!log4j-slf4j-impl.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#collections_2.12;1.1.1!collections_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#librarymanagement-ivy_2.12;1.1.3!librarymanagement-ivy_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-position_2.12;1.1.2!util-position_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-core_2.12;1.1.1!zinc-core_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-ivy-integration_2.12;1.1.1!zinc-ivy-integration_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.squareup.okio#okio;1.12.0!okio.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-persist_2.12;1.1.1!zinc-persist_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc_2.12;1.1.1!zinc_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;1.1.1!compiler-interface.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] net.java.dev.jna#jna-platform;4.5.0!jna-platform.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.github.ben-manes.caffeine#caffeine;2.5.6!caffeine.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.jcraft#jsch;0.1.46!jsch.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.github.cb372#scalacache-caffeine_2.12;0.20.0!scalacache-caffeine_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#sjson-new-core_2.12;0.8.2!sjson-new-core_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#zinc-compile_2.12;1.1.1!zinc-compile_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt#util-interface;1.1.2!util-interface.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.eed3si9n#shaded-scalajson_2.12;1.0.0-M4!shaded-scalajson_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-sbt.ivy#ivy;2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310!ivy.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.5!jline.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] com.lmax#disruptor;3.3.6!disruptor.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 6328ms :: artifacts dl 4082ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT compile produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-compile.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT runtime produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-runtime.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT test produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-test.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT provided produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-provided.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT optional produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-optional.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT compile-internal produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-compile-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT runtime-internal produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-runtime-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT test-internal produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-test-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT plugin produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-plugin.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT pom produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-pom.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for default#bigdataapp-build;0.1.0-SNAPSHOT scala-tool produced in /home/bigdata/Documentos/bigdataapp/bigdataapp/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-bigdataapp-build-scala-tool.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (6328ms resolve - 4082ms download)[0m
 [0m[[0m[0minfo[0m] [0m[0mDone updating.[0m

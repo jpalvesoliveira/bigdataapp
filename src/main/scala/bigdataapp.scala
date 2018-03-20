@@ -16,6 +16,7 @@ import javax.mail.internet.MimeMessage
 import scala.collection.JavaConverters._
 import java.io._
 import java.util.jar._
+import java.net._
 
 object SpedingWatcherApp {
 	def downloadFile(url: String, newfile: String) {
@@ -25,50 +26,60 @@ object SpedingWatcherApp {
 	    out.close
 	}
 
-def copyStream(istream : InputStream, ostream : OutputStream) : Unit = {
-  var bytes =  new Array[Byte](1024)
-  var len = -1
-  while({ len = istream.read(bytes, 0, 1024); len != -1 })
-    ostream.write(bytes, 0, len)
-}
+	def downloadFile() {
+		var out: OutputStream = null;
+		var in: InputStream = null;
+		val url = new URL( """http://arquivos.portaldatransparencia.gov.br/downloads.asp?a=2017&m=12&consulta=FavorecidosTransferencias""")
+		val connection = url.openConnection().asInstanceOf[HttpURLConnection]
+		connection.setRequestMethod("GET")
+		in = connection.getInputStream
+		val localfile = "src.zip"
+		out = new BufferedOutputStream(new FileOutputStream(localfile))
+		val byteArray = Stream.continually(in.read).takeWhile(-1 !=).map(_.toByte).toArray
+		out.write(byteArray)
+	}
 
-def extractJar(file : File) : Unit = {
-  val basename = file.getName.substring(0, file.getName.lastIndexOf("."))
-  val todir = new File(file.getParentFile, basename)
-  todir.mkdirs()
-      
-  println("Extracting " + file + " to " + todir)
-  val jar = new JarFile(file)
-  val enu = jar.entries
-  while(enu.hasMoreElements){
-    val entry = enu.nextElement
-    val entryPath = 
-      if(entry.getName.startsWith(basename)) entry.getName.substring(basename.length) 
-      else entry.getName
-      
-    println("Extracting to " + todir + "/" + entryPath)
-    if(entry.isDirectory){
-      new File(todir, entryPath).mkdirs
-    }else{
-      val istream = jar.getInputStream(entry)
-      val ostream = new FileOutputStream(new File(todir, entryPath))
-      copyStream(istream, ostream)
-      ostream.close
-      istream.close
-     }
-  }
-}
+	def copyStream(istream : InputStream, ostream : OutputStream) : Unit = {
+	  var bytes =  new Array[Byte](1024)
+	  var len = -1
+	  while({ len = istream.read(bytes, 0, 1024); len != -1 })
+	    ostream.write(bytes, 0, len)
+	}
+
+	def extractJar(file : File) : Unit = {
+	  val basename = file.getName.substring(0, file.getName.lastIndexOf("."))
+	  val todir = new File(file.getParentFile, basename)
+	  todir.mkdirs()
+	      
+	  println("Extracting " + file + " to " + todir)
+	  val jar = new JarFile(file)
+	  val enu = jar.entries
+	  while(enu.hasMoreElements){
+	    val entry = enu.nextElement
+	    val entryPath = 
+	      if(entry.getName.startsWith(basename)) entry.getName.substring(basename.length) 
+	      else entry.getName
+	      
+	    println("Extracting to " + todir + "/" + entryPath)
+	    if(entry.isDirectory){
+	      new File(todir, entryPath).mkdirs
+	    }else{
+	      val istream = jar.getInputStream(entry)
+	      val ostream = new FileOutputStream(new File(todir, entryPath))
+	      copyStream(istream, ostream)
+	      ostream.close
+	      istream.close
+	     }
+	  }
+	}
 
 	def main( args: Array[String] ) {
 		val conf = new SparkConf().setAppName("SpedingWatcherApp").setMaster("local[8]")
 		val sc = new SparkContext(conf)
-		/*val html = scala.io.Source.fromURL("http://arquivos.portaldatransparencia.gov.br/downloads.asp?a=2017&m=12&consulta=FavorecidosTransferencias")("ISO-8859-1").mkString
-		println(html)
-*/
 
-		downloadFile("http://arquivos.portaldatransparencia.gov.br/downloads.asp?a=2017&m=12&consulta=FavorecidosTransferencias", "source.zip")
-	//readFile("source.zip",sc.defaultMinPartitions)
-	extractJar(new java.io.File("source.zip"))
-	sc.stop()
+		downloadFile()
+	
+		extractJar(new java.io.File("src.zip"))
+		sc.stop()
 	}
 }

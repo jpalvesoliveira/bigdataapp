@@ -4,7 +4,7 @@
 		module="bigdataapp-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180318204416"
+		publication="20180319215113"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
