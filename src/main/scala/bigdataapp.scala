@@ -17,6 +17,8 @@ import scala.collection.JavaConverters._
 import java.io._
 import java.util.jar._
 import java.net._
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.SaveMode
 
 object SpedingWatcherApp {
 	def downloadFile(url: String, newfile: String) {
@@ -33,7 +35,7 @@ object SpedingWatcherApp {
 		val connection = url.openConnection().asInstanceOf[HttpURLConnection]
 		connection.setRequestMethod("GET")
 		in = connection.getInputStream
-		val localfile = "src.zip"
+		val localfile = "source.zip"
 		out = new BufferedOutputStream(new FileOutputStream(localfile))
 		val byteArray = Stream.continually(in.read).takeWhile(-1 !=).map(_.toByte).toArray
 		out.write(byteArray)
@@ -73,13 +75,42 @@ object SpedingWatcherApp {
 	  }
 	}
 
+	def getListOfFiles(dir: String):List[File] = {
+	    val d = new File(dir)
+	    if (d.exists && d.isDirectory) {
+		d.listFiles.filter(_.isFile).toList
+	    } else {
+		List[File]()
+	    }
+	}
+
 	def main( args: Array[String] ) {
 		val conf = new SparkConf().setAppName("SpedingWatcherApp").setMaster("local[8]")
 		val sc = new SparkContext(conf)
+		val spark = SparkSession.builder().appName("Spark SQL - Exemplo 1").getOrCreate()
 
 		downloadFile()
 	
-		extractJar(new java.io.File("src.zip"))
+		extractJar(new java.io.File("source.zip"))
+
+		val cnpjdf = spark.read.option("header","true").csv("source/201712_CNPJ.csv")
+		val natjdf = spark.read.option("header","true").csv("source/201712_NaturezaJuridica.csv")
+
+		//create properties object
+		val prop = new java.util.Properties
+		prop.setProperty("driver", "com.mysql.jdbc.Driver")
+		prop.setProperty("user", "root")
+		prop.setProperty("password", "Juliana2") 
+		 
+		//jdbc mysql url - destination database is named "data"
+		val url = "jdbc:mysql://localhost:3306/bigdata"
+		 
+		//destination database table 
+		val table = "NATJURIDICA"
+		 
+		//write data from spark dataframe to database
+		natjdf.write.mode(SaveMode.Append).jdbc("jdbc:mysql://localhost:3306/bigdata", "NATJURIDICA", prop)
+
 		sc.stop()
 	}
 }

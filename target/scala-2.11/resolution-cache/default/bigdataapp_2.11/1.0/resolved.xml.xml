@@ -4,7 +4,7 @@
 		module="bigdataapp_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20180319215142"
+		publication="20180320010513"
 	>
 		<description>
 		BigDataApp
@@ -33,5 +33,7 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="2.2.1" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-sql_2.11" rev="2.1.0" conf="compile->default(compile)"/>
+		<dependency org="mysql" name="mysql-connector-java" rev="5.1.12" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
