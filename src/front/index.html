@@ -4,18 +4,27 @@
 		<title>Big data</title>
 		<script src="js/lib/angular.min.js"></script>
 		<script src="js/main.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script src="js/controllers/BolsaFamiliaController.js"></script>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script type="text/javascript">
 			  google.charts.load("current", {packages:["corechart"]});
 			  function drawChart() {
 					var data = google.visualization.arrayToDataTable([
-						  ['Task', 'Hours per Day'],
-						  ['Work',     11],
-						  ['Eat',      2],
-						  ['Commute',  2],
-						  ['Watch TV', 2],
-						  ['Sleep',    7]
+					['Tipo', 'Qtd'],
+					['Associação Privada', 12934],
+					['Fundo Público', 11034],
+					['Município', 5547],
+					['Sociedade Empresária Limitada', 128],
+					['Fundação Privada', 82],
+					['Órgão Público do Poder Executivo Estadual ou do Distrito Federal', 72],
+					['Fundação Pública de Direito Público Municipal', 50],
+					['Autarquia Estadual ou do Distrito Federal', 46],
+					['Órgão Público do Poder Executivo Municipal', 39],
+					['Estado ou Distrito Federal', 35]
 						]);
 
 					var options = {
@@ -26,33 +35,57 @@
 					var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
 					chart.draw(data, options);
 			}
+			
+			function drawChartDoacoes() {
+					var data = google.visualization.arrayToDataTable([
+					['Tipo', 'Qtd'],
+					['Associação Privada', 12934],
+					['Fundo Público', 11034],
+					['Município', 5547],
+					['Sociedade Empresária Limitada', 128],
+					['Fundação Privada', 82],
+					['Órgão Público do Poder Executivo Estadual ou do Distrito Federal', 72],
+					['Fundação Pública de Direito Público Municipal', 50],
+					['Autarquia Estadual ou do Distrito Federal', 46],
+					['Órgão Público do Poder Executivo Municipal', 39],
+					['Estado ou Distrito Federal', 35]
+						]);
+
+					var options = {
+					  title: 'Doações',
+					  is3D: true,
+					};
+
+					var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_doacoes'));
+					chart.draw(data, options);
+			}
 		</script>
 	</head>
-	<body>
-		<div ng-controller="BolsaFamiliaController">
+	<body>	
+	<div class="jumbotron" >
+			<h3>Doações</h3>
 			<div>
 				<label>Ano:</label>
 				<input class="form-control" type="text" ng-model="ano" placeholder="Ano" />
 				<label>Mês:</label>
 				<select class="custom-select" ng-model="mes">
-				  <option selected>Selecione o mês</option>
-				  <option value="1">Janeiro</option>
-				  <option value="2">Fevereiro</option>
-				  <option value="3">Março</option>
-				  <option value="4">Abril</option>
-				  <option value="5">Maio</option>
-				  <option value="6">Junho</option>
-				  <option value="7">Julho</option>
-				  <option value="8">Agosto</option>
-				  <option value="9">Setembro</option>
+				  <option value="01">Janeiro</option>
+				  <option value="02">Fevereiro</option>
+				  <option value="03">Março</option>
+				  <option value="04">Abril</option>
+				  <option value="05">Maio</option>
+				  <option value="06">Junho</option>
+				  <option value="07">Julho</option>
+				  <option value="08">Agosto</option>
+				  <option value="09">Setembro</option>
 				  <option value="10">Outubro</option>
 				  <option value="11">Novembro</option>
 				  <option value="12">Dezembro</option>
 				</select>
 				<button class="btn btn-primary" ng-click="pesquisar(ano, mes)">Pesquisar</button>
-				<button class="btn btn-primary" onclick="drawChart()">Mostrar</button>
+				<button class="btn btn-primary" onclick="drawChartDoacoes()">Mostrar</button>
 			</div>
-			<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-		</div>
+			<div id="piechart_3d_doacoes" style="width: 900px; height: 500px;"></div>
+	</div>
 	</body>
 </html>
