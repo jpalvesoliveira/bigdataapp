@@ -19,6 +19,7 @@ import java.util.jar._
 import java.net._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.SaveMode
+import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType};
 
 object SpedingWatcherApp {
 	def downloadFile(url: String, newfile: String) {
@@ -93,8 +94,32 @@ object SpedingWatcherApp {
 	
 		extractJar(new java.io.File("source.zip"))
 
-		val cnpjdf = spark.read.option("header","true").csv("source/201712_CNPJ.csv")
-		val natjdf = spark.read.option("header","true").csv("source/201712_NaturezaJuridica.csv")
+		val customSchema1 = StructType(Array(
+		    StructField("CNPJ", StringType, true),
+		    StructField("RAZAOSOCIAL", StringType, true),
+		    StructField("FANTASIA", StringType, true),
+		    StructField("CNAE", IntegerType, true),
+		    StructField("CODIGO", IntegerType, true)))
+
+		val customSchema2 = StructType(Array(
+		    StructField("CODIGO", IntegerType, true),
+		    StructField("NATUREZA", StringType, true)))
+
+		val cnpjdf = spark.read.format("csv").     // Use "csv" regardless of TSV or CSV.
+		                option("header", "true").  // Does the file have a header line?
+                		option("delimiter", "\t"). // Set delimiter to tab or comma.
+				option("encoding", "ISO-8859-1").
+			        schema(customSchema1).
+                		load("source/201712_CNPJ.csv")
+
+		val natjdf = spark.read.format("csv").     // Use "csv" regardless of TSV or CSV.
+		                option("header", "true").  // Does the file have a header line?
+                		option("delimiter", "\t"). // Set delimiter to tab or comma.
+				option("encoding", "ISO-8859-1").
+			        schema(customSchema2).
+                		load("source/201712_NaturezaJuridica.csv")
+
+		val df = cnpjdf.join(natjdf, Seq("CODIGO"))
 
 		//create properties object
 		val prop = new java.util.Properties
@@ -106,10 +131,13 @@ object SpedingWatcherApp {
 		val url = "jdbc:mysql://localhost:3306/bigdata"
 		 
 		//destination database table 
-		val table = "NATJURIDICA"
+		val table = "RESULTADO"
 		 
 		//write data from spark dataframe to database
-		natjdf.write.mode(SaveMode.Append).jdbc("jdbc:mysql://localhost:3306/bigdata", "NATJURIDICA", prop)
+		df.write.mode(SaveMode.Overwrite).jdbc(url, table, prop)
+
+		df.printSchema
+		df.show(5)
 
 		sc.stop()
 	}
