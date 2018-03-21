@@ -22,17 +22,10 @@ import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType};
 
 object SpedingWatcherApp {
-	def downloadFile(url: String, newfile: String) {
-	    val src = scala.io.Source.fromURL(url)("ISO-8859-1")
-	    val out = new java.io.FileWriter(newfile)
-	    out.write(src.mkString)
-	    out.close
-	}
-
-	def downloadFile() {
-		var out: OutputStream = null;
-		var in: InputStream = null;
-		val url = new URL( """http://arquivos.portaldatransparencia.gov.br/downloads.asp?a=2017&m=12&consulta=FavorecidosTransferencias""")
+	def downloadFile(ano: String, mes: String) {
+		var out: OutputStream = null
+		var in: InputStream = null
+		val url = new URL( "http://arquivos.portaldatransparencia.gov.br/downloads.asp?a=".concat(ano).concat("&m=").concat(mes).concat("&consulta=FavorecidosTransferencias"))
 		val connection = url.openConnection().asInstanceOf[HttpURLConnection]
 		connection.setRequestMethod("GET")
 		in = connection.getInputStream
@@ -88,11 +81,17 @@ object SpedingWatcherApp {
 	def main( args: Array[String] ) {
 		val conf = new SparkConf().setAppName("SpedingWatcherApp").setMaster("local[8]")
 		val sc = new SparkContext(conf)
-		val spark = SparkSession.builder().appName("Spark SQL - Exemplo 1").getOrCreate()
+		val spark = SparkSession.
+				builder().
+				appName("Spark SQL - Exemplo 1").
+				getOrCreate()
 
-		downloadFile()
+		//--packages mysql:mysql-connector-java:6.0.5 ...
+		downloadFile(args(0), args(1))
 	
 		extractJar(new java.io.File("source.zip"))
+
+		println("Creating schemas")
 
 		val customSchema1 = StructType(Array(
 		    StructField("CNPJ", StringType, true),
@@ -110,16 +109,21 @@ object SpedingWatcherApp {
                 		option("delimiter", "\t"). // Set delimiter to tab or comma.
 				option("encoding", "ISO-8859-1").
 			        schema(customSchema1).
-                		load("source/201712_CNPJ.csv")
+                		load("source/".concat(args(0)).concat(args(1)).concat("_CNPJ.csv"))
 
 		val natjdf = spark.read.format("csv").     // Use "csv" regardless of TSV or CSV.
 		                option("header", "true").  // Does the file have a header line?
                 		option("delimiter", "\t"). // Set delimiter to tab or comma.
 				option("encoding", "ISO-8859-1").
 			        schema(customSchema2).
-                		load("source/201712_NaturezaJuridica.csv")
+                		load("source/".concat(args(0)).concat(args(1)).concat("_NaturezaJuridica.csv"))
 
 		val df = cnpjdf.join(natjdf, Seq("CODIGO"))
+		df.createOrReplaceTempView("TOTAIS")
+
+		var sqlDF = spark.sql("SELECT NATUREZA, Count(*) AS TOTAL FROM TOTAIS GROUP BY NATUREZA")
+
+		println("Storing data")
 
 		//create properties object
 		val prop = new java.util.Properties
@@ -131,13 +135,18 @@ object SpedingWatcherApp {
 		val url = "jdbc:mysql://localhost:3306/bigdata"
 		 
 		//destination database table 
-		val table = "RESULTADO"
+		val table = "TOTAIS"
 		 
 		//write data from spark dataframe to database
-		df.write.mode(SaveMode.Overwrite).jdbc(url, table, prop)
+		//df.write.mode(SaveMode.Overwrite).jdbc(url, table, prop)
+
+		sqlDF.write.mode(SaveMode.Overwrite).jdbc(url, table, prop)
 
 		df.printSchema
 		df.show(5)
+
+		sqlDF.printSchema
+		sqlDF.show(5)
 
 		sc.stop()
 	}
