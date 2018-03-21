@@ -20,6 +20,7 @@ import java.net._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.types.{StructType, StructField, StringType, IntegerType};
+import org.apache.spark.sql.functions._
 
 object SpedingWatcherApp {
 	def downloadFile(ano: String, mes: String) {
@@ -122,6 +123,8 @@ object SpedingWatcherApp {
 		df.createOrReplaceTempView("TOTAIS")
 
 		var sqlDF = spark.sql("SELECT NATUREZA, Count(*) AS TOTAL FROM TOTAIS GROUP BY NATUREZA")
+		var DF1 = sqlDF.orderBy(desc("TOTAL"))
+		var DF2 = DF1.limit(10)
 
 		println("Storing data")
 
@@ -140,7 +143,7 @@ object SpedingWatcherApp {
 		//write data from spark dataframe to database
 		//df.write.mode(SaveMode.Overwrite).jdbc(url, table, prop)
 
-		sqlDF.write.mode(SaveMode.Overwrite).jdbc(url, table, prop)
+		DF2.write.mode(SaveMode.Overwrite).jdbc(url, table, prop)
 
 		df.printSchema
 		df.show(5)
