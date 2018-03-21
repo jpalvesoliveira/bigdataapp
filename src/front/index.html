@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="bigDataApp">
+	<head>
+		<title>Big data</title>
+		<script src="js/lib/angular.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/controllers/BolsaFamiliaController.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript">
+			  google.charts.load("current", {packages:["corechart"]});
+			  function drawChart() {
+					var data = google.visualization.arrayToDataTable([
+						  ['Task', 'Hours per Day'],
+						  ['Work',     11],
+						  ['Eat',      2],
+						  ['Commute',  2],
+						  ['Watch TV', 2],
+						  ['Sleep',    7]
+						]);
+
+					var options = {
+					  title: 'Bolsa Família',
+					  is3D: true,
+					};
+
+					var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+					chart.draw(data, options);
+			}
+		</script>
+	</head>
+	<body>
+		<div ng-controller="BolsaFamiliaController">
+			<div>
+				<label>Ano:</label>
+				<input class="form-control" type="text" ng-model="ano" placeholder="Ano" />
+				<label>Mês:</label>
+				<select class="custom-select" ng-model="mes">
+				  <option selected>Selecione o mês</option>
+				  <option value="1">Janeiro</option>
+				  <option value="2">Fevereiro</option>
+				  <option value="3">Março</option>
+				  <option value="4">Abril</option>
+				  <option value="5">Maio</option>
+				  <option value="6">Junho</option>
+				  <option value="7">Julho</option>
+				  <option value="8">Agosto</option>
+				  <option value="9">Setembro</option>
+				  <option value="10">Outubro</option>
+				  <option value="11">Novembro</option>
+				  <option value="12">Dezembro</option>
+				</select>
+				<button class="btn btn-primary" ng-click="pesquisar(ano, mes)">Pesquisar</button>
+				<button class="btn btn-primary" onclick="drawChart()">Mostrar</button>
+			</div>
+			<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+		</div>
+	</body>
+</html>
