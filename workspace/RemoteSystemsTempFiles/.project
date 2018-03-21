@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>RemoteSystemsTempFiles</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.rse.ui.remoteSystemsTempNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>main</name>
+			<type>2</type>
+			<location>/home/bigdata/Documentos/bigdataapp/bigdataapp/workspace/bigdatabackend/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>
