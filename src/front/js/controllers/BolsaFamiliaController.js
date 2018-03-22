@@ -1,14 +1,14 @@
-angular.module('bigDataApp').controller('BolsaFamiliaController', ['$scope','$http', function($scope,$http) {
+angular.module('bigDataApp').controller('bolsaFamiliaController', ['$scope','$http', function($scope,$http) {
 	$scope.pesquisar = function (ano, mes){
-		console.log(ano);
-		console.log(mes);
-		
-		$scope.dados = [];
-		
-		$http.get("http://localhost:5260/api/chamado?ano="+ano+"&mes="+mes+"").success(function (data, status){
-			console.log("sucesso rest");
+		var url = "http://localhost:8080/consultar?ano="+ano+"&mes="+mes;
+		$http.get(url).then(function (data, status){
 			console.log(data);
-			drawChartDoacoes();
+			var dados = [];
+			dados.push(['Tipo', 'Qtd']);
+			jQuery.each(data.data, function() {
+			  dados.push([ this.natureza, this.total ]);
+			});
+			drawChartDoacoes(dados);
 		});
 	};
 }]);

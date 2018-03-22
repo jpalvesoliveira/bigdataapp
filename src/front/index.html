@@ -36,8 +36,13 @@
 					chart.draw(data, options);
 			}
 			
-			function drawChartDoacoes() {
-					var data = google.visualization.arrayToDataTable([
+			function drawChartDoacoes(array) {
+				if (typeof(array) != "undefined") {
+					//console.log(array);
+					//array = array.unshift('Tipo', 'Qtd');
+					console.log(array);
+					var data = google.visualization.arrayToDataTable(array);
+					/*[
 					['Tipo', 'Qtd'],
 					['Associação Privada', 12934],
 					['Fundo Público', 11034],
@@ -49,7 +54,8 @@
 					['Autarquia Estadual ou do Distrito Federal', 46],
 					['Órgão Público do Poder Executivo Municipal', 39],
 					['Estado ou Distrito Federal', 35]
-						]);
+						]);*/
+					
 
 					var options = {
 					  title: 'Doações',
@@ -58,11 +64,12 @@
 
 					var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_doacoes'));
 					chart.draw(data, options);
+				}
 			}
 		</script>
 	</head>
 	<body>	
-	<div class="jumbotron" >
+	<div class="jumbotron" ng-controller="bolsaFamiliaController" >
 			<h3>Doações</h3>
 			<div>
 				<label>Ano:</label>
